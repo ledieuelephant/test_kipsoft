@@ -66,7 +66,7 @@ export default class App extends React.Component {
   }
 
 
-  // Fonction relié a l'input number et fetch la page en fonction de sa value
+  // Fonction relié a l'entrée nombre et récupéré l'API en fonction de sa valeur
   fetchByNumber = (e) => {
     fetch("https://entreprise.data.gouv.fr/api/sirene/v1/siret/" + this.state.search + "?page=" + e.target.value)
       .then(response => {
